@@ -1,0 +1,50 @@
+name: Zugangsanfrage
+description: Zugang zur OK!Thermo-Fragensammlung beantragen
+title: "Zugangsanfrage"
+labels: ["zugangsanfrage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vielen Dank für Ihr Interesse an der OK!Thermo-Fragensammlung!
+        Bitte füllen Sie die folgenden Felder aus.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Prof. Dr. Max Mustermann
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: E-Mail (Hochschul-Adresse)
+      placeholder: max.mustermann@hs-beispiel.de
+    validations:
+      required: true
+
+  - type: input
+    id: hochschule
+    attributes:
+      label: Hochschule / Institution
+      placeholder: Hochschule Beispielstadt
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lms
+    attributes:
+      label: Welches LMS nutzen Sie?
+      options:
+        - Moodle
+        - Andere
+    validations:
+      required: true
+
+  - type: textarea
+    id: nachricht
+    attributes:
+      label: Nachricht (optional)
+      placeholder: z.B. welche Themengebiete Sie interessieren, wie viele Studierende Sie betreuen, ob Sie auch Aufgaben beitragen möchten etc.

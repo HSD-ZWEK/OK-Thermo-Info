@@ -1,0 +1,37 @@
+title: "OK!Thermo"
+author: "Hochschule Düsseldorf – ZWEK"
+description: "Online-Kompetenztrainer für Thermodynamik"
+
+url: "https://hsd-zwek.github.io"
+baseurl: "/OK-Thermo-Info"
+
+remote_theme: sighingnow/jekyll-gitbook
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jekyll-remote-theme
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+
+page_width: 800px
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
